@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activiad 3</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Comparador de números</h2>
+        <form>
+            <label for="nUno">Nº1</label>
+            <input name="nUno" id="nUno" type="string">
+            <label for="nDos">Nº2</label>
+            <input name="nDos" id="nDos" type="string">
+            <button id="submitBoton" type="button">Enviar</button>
+        </form>
+        <h2 id="resultado">
+
+        </h2>
+    </body>
+    <script>
+        let numUno;
+        let numDos;
+
+        document.getElementById('submitBoton').addEventListener('click', event =>{
+            numUno = document.getElementById('nUno').value;
+            numDos = document.getElementById('nDos').value;
+            let numUnoparsed = parseInt(numUno);
+            let numDosparsed = parseInt(numDos);
+
+            let resultado = numUnoparsed + numDosparsed;
+            
+            if(!isNaN(resultado)){
+                if(numUnoparsed == numDosparsed){
+                    document.getElementById('resultado').innerHTML = 'Los números son iguales';
+                } else if(numUnoparsed == numDosparsed){
+                document.getElementById('resultado').innerHTML = 'El 1º número es mayor que el 2º';
+                } else {
+                    document.getElementById('resultado').innerHTML = 'El 1º número es menor que el 2º';
+
+                }
+
+            }else{
+                document.getElementById('resultado').innerHTML = 'Solo se admiten números';
+            }
+        });
+
+    </script>
+</html>
