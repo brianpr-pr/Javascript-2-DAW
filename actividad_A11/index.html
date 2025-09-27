@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2 id="container"></h2>
+    </body>
+    <script>
+        const container = document.getElementById('container');
+        let input = prompt('Introduzca el número de iteraciones');
+        let numCollection = '';
+        for(let i = 1;i <= input;i++){
+            numCollection = numCollection + i.toString();
+            container.innerHTML = container.innerHTML + numCollection;
+            container.innerHTML = container.innerHTML + '<br>';
+        }
+    </script>
+</html>
