@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>Cuenta atras iniciada</h2>
+        <h2 id="cuenta-atras"></h2>
+    </body>
+    <script>
+        let numeroCuenta = prompt("Ingrese el numero desde le que se realiza la cuenta atras");
+        const cuentaAtras = document.getElementById('cuenta-atras');
+let i = numeroCuenta;
+let f = 0;
+
+    while(i >= 0){
+        setTimeout(() => {
+            cuentaAtras.innerHTML = i;
+        }, (numeroCuenta - i) * 1000);
+        
+        setTimeout(() => {
+            cuentaAtras.innerHTML = f;
+        }, (numeroCuenta + f) * 1000);
+        i--;
+        f++;
+
+    }
+    </script>
+</html>
