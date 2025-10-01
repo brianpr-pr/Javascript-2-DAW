@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Porfavor ingrese su edad y genero</h2>
+        <form id="form">
+            <label for="edad">Edad</label>
+            <input type="number" min="0" name="edad" id="edad">
+            <br>
+            <legend>Genero</legend>
+            <label>Masculino</label>
+            <input type="radio" name="group" id="masculino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" name="group" id="femenino">
+            <br>
+            <button id="enviar">Enviar</button>
+        </form>
+        <ul id="lista">
+            <li class="elemento">Zona de recuperación <span id="recuperacion"></span></li>
+            <li class="elemento">Zona aeróbica <span id="aerobica"></span></li>
+            <li class="elemento">Zona anaeróbica <span id="anaerobica"></span></li>
+            <li class="elemento">Línea roja <span id="roja"></span></li>
+        </ul>
+    </body>
+    <script src="fcm.js"></script>
+</html>

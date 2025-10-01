@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Porfavor ingrese su altura en cm y su peso en Kg</h2>
+        <form id="form">
+            <label for="altura">Altura</label>
+            <input type="number" min="0" name="altura" id="altura">
+            <br>
+            <label for="peso">Peso</label>
+            <input type="number" min="0" name="peso" id="peso">
+            <br>
+            <button id="enviar">Enviar</button>
+        </form>
+        <ul id="lista">
+            <li class="elemento"> &lt;16.00: Infrapeso (delgadez severa)</li>
+            <li class="elemento">16.00 – 16.99: Infrapeso (delgadez moderada)</li>
+            <li class="elemento">17.00 - 18.49: Infrapeso (delgadez aceptable)</li>
+            <li class="elemento">18.50 - 24.99: Peso normal</li>
+            <li class="elemento">25.00 - 29.99: Sobrepeso</li>
+            <li class="elemento">30.00 - 34.99: Obeso (Tipo I)</li>
+            <li class="elemento">35.00 - 40.00: Obeso (Tipo II)</li>
+            <li class="elemento">&gt;40.00: Obeso (Tipo III)</li>
+        </ul>
+    </body>
+    <script src="imc.js"></script>
+</html>
