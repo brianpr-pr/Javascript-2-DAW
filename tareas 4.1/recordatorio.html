@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button name="" id="aceptar" style="display: none;">Aceptar</button>
+    <button name="" id="cancelar" style="display: none;">Cancelar</button>
+</body>
+<script>
+function inicio() {
+    return setInterval(() => {
+        document.getElementById('aceptar').style.display = "block";
+        document.getElementById('cancelar').style.display = "block";
+        alert("Recordatorio activo.");
+    }, 5000);
+}
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    let idInterval;
+
+    document.getElementById('aceptar').addEventListener("click", (event) => {
+        idInterval = inicio();        
+    });
+
+    document.getElementById('cancelar').addEventListener("click", (event) => {
+        clearInterval(idInterval);
+    });
+
+    document.getElementById('aceptar').click();
+    console.log(idInterval);
+});
+</script>
+</html>

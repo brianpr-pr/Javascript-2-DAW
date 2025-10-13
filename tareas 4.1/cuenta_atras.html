@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="open">Open "myWindow"</button>
+    <button id="close">Close "myWindow"</button>
+</body>
+<script>
+let myWindow;
+function openWin() {
+  myWindow = window.open("", "myWindow", "width=200, height=100");
+}
+
+function closeWin() {
+  myWindow.close();
+}
+
+
+
+document.getElementById("open").addEventListener("click", () => {
+    openWin();
+});
+
+document.getElementById("close").addEventListener("click", () => {
+    closeWin();
+});
+
+document.getElementById("open").click();
+
+
+setTimeout(() =>{
+    document.getElementById('close').click();
+    alert("Se acabaron los 30 segundos.");
+}, 30000);
+</script>
+</html>
