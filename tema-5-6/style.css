@@ -1,0 +1,31 @@
+.carta{
+    width: 200px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.personaje{
+    height: 180px;
+    width: 150px;
+    margin-top: 15px;
+}
+
+.div-resultado{
+    border: 2px solid black;
+    margin-left: 20%;
+}
+
+body{
+    tr{
+        margin-top: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+
+        td{
+            margin-left: 10px;
+        }
+    }
+}
