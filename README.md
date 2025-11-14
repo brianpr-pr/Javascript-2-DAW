@@ -1,5 +1,1 @@
-En tareas 4.1 falta por hacer:
-
-Temporizador de Tareas Pomodoro:
-
-Contador de Visitas:
+Repository to upload all javascript exercises done in the 2º of Web App Development
