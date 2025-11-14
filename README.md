@@ -1,1 +1,1 @@
-Repository to upload all javascript exercises done in the 2º of Web App Development
+Repository to upload all javascript exercises done in the 2º year of Web App Development.
