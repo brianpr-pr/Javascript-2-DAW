@@ -1,1 +1,0 @@
-Arreglar if statement para evitar que pueda cambiar de color al volver a clickar y que no pueda volver a clickar hasta que no se vuelvan a esconder las imagens de la pareja de cartas incorrecta.
